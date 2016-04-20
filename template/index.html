@@ -1,0 +1,42 @@
+﻿<html>
+
+<head>
+    <meta charset=UTF-8" />
+    <title>Моя страница</title>
+	
+    <link rel="stylesheet" href="css/style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src ="js/tmpl.js"></script>
+    <script src ="js/script.js"></script>
+</head>
+
+<body>
+    <script type="text/template" id="test">
+     <div class="block">
+		<div class="block1"> 
+	   <h1><%= title %></h1>
+	   <img class="img" src="<%=url%>"/>
+	   <p class="text"><%= content %></p><hr>
+	  </div> 
+	  <div class="block1">		      
+		 <p class="text1"><%=target%></p>
+          <ul class="text2">
+		  <li><%=why1%></li>
+		  <li><%=why2%></li>
+		  <li><%=why3%></li>
+		 </ul><hr>
+		</div><!--конец блока2-->
+		<div class="block1">
+		 <p class="text1"><br>				
+		  <%=contacts%>
+		 </p>	
+		 <p class="text"><%=profile%></p><hr>
+		 <p class="text1"><%=fidback%>
+		 </p>			
+		</div><!--конец блока3-->
+		</div>			
+	</div> <!--конец блока body-->
+	</div>
+    </script>
+</body>
+</html>
